@@ -1,0 +1,23 @@
+
+.maintext{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4rem;
+    color: #fff;
+    font-weight: 200;
+    height: 30rem;
+    background: linear-gradient(var(--color-primary), var(--color-primary-light));
+
+}
+
+.maintext h2{
+    font-weight: 300;
+}
+
+.maintext p{
+    width: 350px;
+    text-align: center;
+    
+}
