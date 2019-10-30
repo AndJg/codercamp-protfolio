@@ -1,3 +1,8 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
 
 .maintext{
     display: flex;
@@ -5,19 +10,53 @@
     justify-content: flex-start;
     align-items: center;
     padding: 4rem;
-    color: #fff;
+    color: var(--color-white);
     font-weight: 200;
     height: 30rem;
+    margin-bottom: 30rem;
     background: linear-gradient(var(--color-primary), var(--color-primary-light));
-
 }
 
 .maintext h2{
     font-weight: 300;
+    font-size: 2rem;
 }
 
 .maintext p{
     width: 350px;
     text-align: center;
     
+}
+
+.skills{
+    width: 38rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border: 2px solid var(--color-white);
+    background: var(--color-white);
+    box-shadow: 0.5rem 0.5rem 0.9rem var(--color-primary-dark);
+    border-radius: 2rem;
+    padding: 2rem;
+    position: absolute;
+    top: 20rem;
+
+
+ &__column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+    &__column img{
+         width: 4rem;
+         margin: 1rem 0 2rem 0;
+    }
+
+    &__column p{
+        text-align: center;
+        font-weight: bold;
+    }
+
 }
