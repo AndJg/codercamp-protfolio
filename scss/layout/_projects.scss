@@ -5,16 +5,6 @@
     margin: 0 0 8rem 0;
 }
 
-.projects::before{
-    
-    content: '';
-    background: silver;
-    height: 10px;
-    margin-top: -20px;
-    margin-left: 101px;
-}
-
-
 .projects h2{
 
     font-size: 2rem;
@@ -61,11 +51,10 @@
         opacity: 0;
         border-radius: 1.8rem;
         text-align: center;
-        padding: 8px;
         color: var(--color-white);
         display: flex;
         flex-direction: column;
-        padding: 2rem;
+        padding: 4rem;
     }
 
     .color-overlay > a{

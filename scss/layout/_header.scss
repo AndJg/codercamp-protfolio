@@ -15,21 +15,22 @@ nav{
 }
 
 .links-nav, img{
-    width: 50px;
-    height: 50px;
-    margin: 8px 20px 31px 10px;
+    width: 3rem;
+    height: 3rem;
+    margin: .5rem .25rem 1.875rem .625rem;
 }
 
 .nav__button{
-    width: 100px;
-    height: 50px;
-    margin: 0px 20px 0 0;
+    width: 8rem;
+    height: 3rem;
+    margin: 0px 1.2rem 0 0;
     background: var(--color-primary);
     border: solid 2px var(--color-primary-dark);
-    border-radius: 20px;
+    border-radius: 0rem;
     color: var(--color-white);
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .nav__button:hover{
@@ -45,10 +46,10 @@ nav{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 0 0 100px 0;
+    padding: 0 0 6.25rem 0;
 
         &__item{
-            height: 250px;
+            height: 15.625rem;
         }
 
     &__clip-path-left{
@@ -56,19 +57,46 @@ nav{
         height: 200px;
         background: var(--color-primary);
         position: absolute;
-        top: 419px;
+        top: 427px;
         clip-path: ellipse(98% 96% at 0 100%);
         transition: width 2s;
     }
 
+ 
+
+
+
+
     &__clip-path-left:hover{
         width: 500px;
     
+        .menu{
+            visibility: visible;
+        }
     }
 }
 
 h1{
-    font-size: 57px;
+    font-size: 3.5rem;
     align-self: center;
-    margin: 50px 0 34px;
+    margin: 3.125rem 0 2.125rem;
+    animation: welcomeMove  2s ease-in;
+}
+
+
+
+.menu{
+    font-size: 2rem;
+    color: var(--color-white);
+    visibility: hidden;
+    padding: 2rem;
+}
+
+.menu li,a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu li,a:visited,a:active,a:link{
+    color: var(--color-white);
 }

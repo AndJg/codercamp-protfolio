@@ -1,3 +1,6 @@
+@import "base/animations";
+
+
 .about{
     display: flex;
     flex-direction: column;
@@ -13,13 +16,14 @@
     color: var(--color-white);
     font-weight: 200;
     height: 30rem;
-    margin-bottom: 30rem;
+    margin: 0 0 25rem 0;
     background: linear-gradient(var(--color-primary), var(--color-primary-light));
 }
 
 .maintext h2{
     font-weight: 300;
     font-size: 2rem;
+    margin: -2.25rem 0 01rem 0;
 }
 
 .maintext p{
@@ -29,7 +33,7 @@
 }
 
 .skills{
-    width: 38rem;
+    width: 53rem;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -52,6 +56,7 @@
     &__column img{
          width: 4rem;
          margin: 1rem 0 2rem 0;
+        animation: mymove 5s ease-in;
     }
 
     &__column p{
@@ -59,4 +64,9 @@
         font-weight: bold;
     }
 
+}
+
+@keyframes mymove {
+    from {transform: translateY(-20px);}
+    to {transform: translateY(0);}
 }

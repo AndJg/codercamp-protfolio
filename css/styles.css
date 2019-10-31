@@ -11,6 +11,12 @@ body {
   padding: 0;
   box-sizing: border-box; }
 
+@keyframes welcomeMove {
+  from {
+    transform: translateY(-2em); }
+  to {
+    transform: translateY(0); } }
+
 :root {
   --color-primary: #7510F7;
   --color-primary-light: #8A36F5;
@@ -28,19 +34,20 @@ nav {
     display: flex;
     list-style: none; }
   nav .links-nav, nav img {
-    width: 50px;
-    height: 50px;
-    margin: 8px 20px 31px 10px; }
+    width: 3rem;
+    height: 3rem;
+    margin: .5rem .25rem 1.875rem .625rem; }
   nav .nav__button {
-    width: 100px;
-    height: 50px;
-    margin: 0px 20px 0 0;
+    width: 8rem;
+    height: 3rem;
+    margin: 0px 1.2rem 0 0;
     background: var(--color-primary);
     border: solid 2px var(--color-primary-dark);
-    border-radius: 20px;
+    border-radius: 0rem;
     color: var(--color-white);
     font-size: 1rem;
-    font-weight: 700; }
+    font-weight: 400;
+    text-transform: uppercase; }
   nav .nav__button:hover {
     background: transparent;
     color: var(--color-primary);
@@ -50,24 +57,46 @@ nav {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0 0 100px 0; }
+  padding: 0 0 6.25rem 0; }
   .maincontainer__item {
-    height: 250px; }
+    height: 15.625rem; }
   .maincontainer__clip-path-left {
     width: 219px;
     height: 200px;
     background: var(--color-primary);
     position: absolute;
-    top: 419px;
+    top: 427px;
     clip-path: ellipse(98% 96% at 0 100%);
     transition: width 2s; }
   .maincontainer__clip-path-left:hover {
     width: 500px; }
+    .maincontainer__clip-path-left:hover .menu {
+      visibility: visible; }
 
 h1 {
-  font-size: 57px;
+  font-size: 3.5rem;
   align-self: center;
-  margin: 50px 0 34px; }
+  margin: 3.125rem 0 2.125rem;
+  animation: welcomeMove  2s ease-in; }
+
+.menu {
+  font-size: 2rem;
+  color: var(--color-white);
+  visibility: hidden;
+  padding: 2rem; }
+
+.menu li, a {
+  list-style: none;
+  text-decoration: none; }
+
+.menu li, a:visited, a:active, a:link {
+  color: var(--color-white); }
+
+@keyframes welcomeMove {
+  from {
+    transform: translateY(-2em); }
+  to {
+    transform: translateY(0); } }
 
 .about {
   display: flex;
@@ -83,19 +112,20 @@ h1 {
   color: var(--color-white);
   font-weight: 200;
   height: 30rem;
-  margin-bottom: 30rem;
+  margin: 0 0 25rem 0;
   background: linear-gradient(var(--color-primary), var(--color-primary-light)); }
 
 .maintext h2 {
   font-weight: 300;
-  font-size: 2rem; }
+  font-size: 2rem;
+  margin: -2.25rem 0 01rem 0; }
 
 .maintext p {
   width: 350px;
   text-align: center; }
 
 .skills {
-  width: 38rem;
+  width: 53rem;
   display: flex;
   justify-content: center;
   align-self: center;
@@ -113,23 +143,23 @@ h1 {
     justify-content: center; }
   .skills__column img {
     width: 4rem;
-    margin: 1rem 0 2rem 0; }
+    margin: 1rem 0 2rem 0;
+    animation: mymove 5s ease-in; }
   .skills__column p {
     text-align: center;
     font-weight: bold; }
+
+@keyframes mymove {
+  from {
+    transform: translateY(-20px); }
+  to {
+    transform: translateY(0); } }
 
 .projects {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 0 8rem 0; }
-
-.projects::before {
-  content: '';
-  background: silver;
-  height: 10px;
-  margin-top: -20px;
-  margin-left: 101px; }
 
 .projects h2 {
   font-size: 2rem; }
@@ -162,14 +192,37 @@ h1 {
     opacity: 0;
     border-radius: 1.8rem;
     text-align: center;
-    padding: 8px;
     color: var(--color-white);
     display: flex;
     flex-direction: column;
-    padding: 2rem; }
+    padding: 4rem; }
   .project-grid .color-overlay > a {
     cursor: pointer;
     border-radius: 1rem;
     padding: 0.5rem;
     color: var(--color-white);
     text-decoration: none; }
+
+.contact-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  color: var(--color-white);
+  font-weight: 200;
+  height: 30rem;
+  margin: 0 0 18rem 0;
+  background: linear-gradient(var(--color-primary), var(--color-primary-light)); }
+
+.contact-grid h2 {
+  padding: 0 0 2rem 0;
+  font-size: 3rem;
+  text-transform: uppercase; }
+
+.contact-grid img {
+  width: 45rem; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase; }

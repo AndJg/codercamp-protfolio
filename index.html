@@ -20,10 +20,15 @@
          
         <h1>Hi, I am Andrzej. Web developer</h1>
            <!--SVG -->
-           
-           <object class="maincontainer__item" data="images/monitor.svg" type="image/svg+xml"></object> 
-           <div class="maincontainer__clip-path-left"></div>
-    </div>
+           <object class="maincontainer__item" id="monitor" data="images/monitor.svg" type="image/svg+xml" ></object> 
+           <div class="maincontainer__clip-path-left">
+               <ul class="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+               </ul>
+            </div>
+      </div>
  </header>
  <section id="about" class="about">
      <div class="maintext">
@@ -32,14 +37,14 @@
               tempore dolor hic magnam aliquam eum dignissimos quia? 
               Autem sunt iste numquam magnam eligendi dolores perferendis quia pariatur?</p>
      </div>
-     <div class="skills">
-         <div class="skills__column"><img src="images/html5.svg" alt="html5"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eos omnis iure maxime nisi at neque, quos eius obcaecati incidunt voluptas 
+     <div class="skills" >
+         <div onclick="mystyle()" class="skills__column"><img id="skill-img"src="images/html5.svg" alt="html5"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eos omnis iure maxime nisi at neque, quos eius obcaecati incidunt voluptas 
              excepturi mollitia adipisci id, ut quam rem quaerat? Fugiat amet porro consectetur quidem!</p></div>
-         <div class="skills__column"><img src="images/css-3.svg" alt="css-3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eos omnis iure maxime nisi at neque, quos eius obcaecati incidunt voluptas 
+         <div class="skills__column"><img id="skill-img" src="images/css-3.svg" alt="css-3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eos omnis iure maxime nisi at neque, quos eius obcaecati incidunt voluptas 
                 excepturi mollitia adipisci id, ut quam rem quaerat? Fugiat amet porro consectetur quidem!</p></div>
-         <div class="skills__column"><img src="images/sass.svg" alt="sass"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eos omnis iure maxime nisi at neque, quos eius obcaecati incidunt voluptas 
+         <div class="skills__column"><img id="skill-img" src="images/sass.svg" alt="sass"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eos omnis iure maxime nisi at neque, quos eius obcaecati incidunt voluptas 
                 excepturi mollitia adipisci id, ut quam rem quaerat? Fugiat amet porro consectetur quidem!</p></div>
-         <div class="skills__column"><img src="images/javascript.svg" alt="javascript"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eos omnis iure maxime nisi at neque, quos eius obcaecati incidunt voluptas 
+         <div class="skills__column"><img id="skill-img"src="images/javascript.svg" alt="javascript"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eos omnis iure maxime nisi at neque, quos eius obcaecati incidunt voluptas 
                 excepturi mollitia adipisci id, ut quam rem quaerat? Fugiat amet porro consectetur quidem!</p></div>
      </div>
  </section>
@@ -75,6 +80,17 @@
         </figure>
     </div>
  </section>
- <footer>copyright</footer>
+ <footer><p>&copy; 2019 Andrzej Jagielski</p></footer>
+
 </body>
+<script type="text/javascript">
+    const select = document.getElementById('skill-img');
+   
+
+    function mystyle(){
+        console.log('clicked');
+        select.style.fill = '#000';
+
+    }
+</script>
 </html>
