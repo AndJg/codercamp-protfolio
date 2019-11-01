@@ -60,6 +60,9 @@ nav{
         top: 427px;
         clip-path: ellipse(98% 96% at 0 100%);
         transition: width 2s;
+        animation: menu  2s ease-in;
+        animation-delay: 2s;
+        
     }
 
  
@@ -99,4 +102,9 @@ h1{
 
 .menu li,a:visited,a:active,a:link{
     color: var(--color-white);
+}
+
+@media only screen and (max-width: 600px)  {
+
+    
 }

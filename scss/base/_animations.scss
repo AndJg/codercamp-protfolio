@@ -1,5 +1,29 @@
 
 @keyframes welcomeMove {
-    from {transform: translateY(-2em);}
-    to {transform: translateY(0);}
+    0% {
+        font-size: .7rem;
+      }
+      30% {
+        font-size: 2rem;
+      }
+      100% {
+        font-size: 3.5rem;
+      }
+
 }
+
+
+
+@keyframes rotateIcon {
+    0% {
+        // transform: rotate(-90deg);
+        transform: rotateY(180deg);
+      }
+      100% {
+        // transform: rotate(90deg);
+        transform: rotateY(-180deg)
+      }
+
+}
+
+

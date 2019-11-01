@@ -1,4 +1,4 @@
-@import "base/animations";
+
 
 
 .about{
@@ -56,8 +56,12 @@
     &__column img{
          width: 4rem;
          margin: 1rem 0 2rem 0;
-        animation: mymove 5s ease-in;
     }
+
+
+    &__column img:hover{
+       animation: rotateIcon 1s ease-in-out;
+   }
 
     &__column p{
         text-align: center;
@@ -66,7 +70,3 @@
 
 }
 
-@keyframes mymove {
-    from {transform: translateY(-20px);}
-    to {transform: translateY(0);}
-}

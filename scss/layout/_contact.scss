@@ -18,5 +18,9 @@
 
 .contact-grid img{
     width: 45rem
-    
+}
+
+
+.contact-grid img:hover{
+    filter: contrast(150%);
 }
