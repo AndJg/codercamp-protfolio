@@ -1,30 +1,30 @@
-.projects{
+.projects {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 0 8rem 0;
 }
 
-.projects h2{
+.projects h2 {
 
     font-size: 2rem;
 }
 
-.projects h3{
+.projects h3 {
     font-size: 1.5rem;
     margin: 0.5rem 0 2rem 0;
 }
 
-.project-grid{
-    
+.project-grid {
+
     width: 75vw;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    
 
-    &__item{
+
+    &__item {
         width: 30%;
         border-radius: 2rem;
         margin: 2% 0% 1% 0;
@@ -33,69 +33,69 @@
 
     }
 
-    .item1{
+    .item1 {
         background: url("../../images/portfolio.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
 
-    .item1:hover  .color-overlay{
+    .item1:hover .color-overlay {
         opacity: 1;
     }
 
-    .item2{
+    .item2 {
         background: url("../../images/empty-project.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
 
-    .item2:hover  .color-overlay{
+    .item2:hover .color-overlay {
         opacity: 1;
     }
 
-    .item3{
+    .item3 {
         background: url("../../images/empty-project.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
 
-    .item3:hover  .color-overlay{
+    .item3:hover .color-overlay {
         opacity: 1;
     }
 
-    .item4{
+    .item4 {
         background: url("../../images/empty-project.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
 
-    .item4:hover  .color-overlay{
+    .item4:hover .color-overlay {
         opacity: 1;
     }
 
-    .item5{
+    .item5 {
         background: url("../../images/empty-project.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
 
-    .item5:hover  .color-overlay{
+    .item5:hover .color-overlay {
         opacity: 1;
     }
 
-    .item6{
+    .item6 {
         background: url("../../images/empty-project.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
 
-    .item6:hover  .color-overlay{
+    .item6:hover .color-overlay {
         opacity: 1;
     }
-    
-    
 
-    .color-overlay{
+
+
+    .color-overlay {
         width: 100%;
         height: 100%;
         font-size: 1.2rem;
@@ -109,15 +109,30 @@
         padding: 2rem;
     }
 
-    .color-overlay > a{
+    .color-overlay>a {
         cursor: pointer;
         border-radius: 1rem;
         padding: 0.5rem;
         color: var(--color-white);
         text-decoration: none;
     }
-
-
-    
 }
 
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 700px) {
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 60rem 0 8rem 0;
+    }
+
+    .project-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}

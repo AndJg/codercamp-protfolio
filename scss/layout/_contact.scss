@@ -1,26 +1,40 @@
-.contact-grid{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem;
-        color: var(--color-white);
-        font-weight: 200;
-        height: 30rem;
-       margin: 0 0 18rem 0;
-        background: linear-gradient(var(--color-primary), var(--color-primary-light));
+.contact-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    color: var(--color-white);
+    font-weight: 200;
+    height: 30rem;
+    margin: 0 0 18rem 0;
+    background: linear-gradient(var(--color-primary), var(--color-primary-light));
 }
 
-.contact-grid h2{
+.contact-grid h2 {
     padding: 0 0 2rem 0;
     font-size: 3rem;
     text-transform: uppercase;
 }
 
-.contact-grid img{
+.contact-grid img {
     width: 45rem
 }
 
 
-.contact-grid img:hover{
+.contact-grid img:hover {
     filter: contrast(150%);
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 700px) {
+
+    .contact-grid img {
+        width: 80%;
+    }
+
+    figure {
+        display: flex;
+        justify-content: center;
+    }
+
 }
